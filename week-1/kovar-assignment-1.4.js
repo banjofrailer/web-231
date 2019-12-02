@@ -22,4 +22,4 @@ console.log(lastName);
 console.log(age);
 console.log(street);
 console.log(city);
-console.log(zipCode);
+console.log(zip9Code);
