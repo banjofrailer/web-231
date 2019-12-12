@@ -17,6 +17,7 @@ console.log(header.display('Sarah', 'Kovar', 'Exercise 3.1'));
 
 var animal = "sheep";
 
+//switch statement to output different animal noises
 switch(sheep) {
   case "cow":
     text = "Moooooooo";
