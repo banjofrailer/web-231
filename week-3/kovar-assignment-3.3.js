@@ -3,7 +3,7 @@
 ; Title: Assignment 3.3
 ; Author: Professor Krasso
 ; Date: 15 December 2019
-; Modified By: Sarah KOvar
+; Modified By: Sarah Kovar
 ; Description: This program uses switch 
 ; statement to replace if/else statements. 
 ;===========================================

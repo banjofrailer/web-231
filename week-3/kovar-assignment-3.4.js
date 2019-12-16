@@ -1,8 +1,9 @@
 /*
 ============================================
 ; Title: Assignment 3.4
-; Author: Sarah Kovar
+; Author: Professor Krasso
 ; Date: 15 December 2019
+; Modified By: Sarah Kovar
 ; Description: This program uses a loop to 
 ; check if a random number matches preset value. 
 ;===========================================
