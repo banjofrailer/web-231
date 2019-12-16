@@ -1,8 +1,9 @@
 /*
 ============================================
 ; Title: Assignment 3.3
-; Author: Sarah Kovar
+; Author: Professor Krasso
 ; Date: 15 December 2019
+; Modified By: Sarah KOvar
 ; Description: This program uses switch 
 ; statement to replace if/else statements. 
 ;===========================================
