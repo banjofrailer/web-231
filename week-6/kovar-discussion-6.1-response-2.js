@@ -68,7 +68,7 @@ console.log(zach.name + " is " + zach.age + " years old, and lives in " + zach.c
 
 
 
-console.log(jake.name + " is " + jake.age + " years old, and lives in " + jake.city); //added a period in between jake and city
+console.log(jake.name + " is " + jake.age + " years old, and lives in " + jake.city); //SK added a period in between jake and city
 
 
 
