@@ -1,0 +1,18 @@
+/*
+============================================
+; Title: site.css
+; Author: Sarah Kovar
+; Date: 25 January 2020
+; Description: CSS File for Javascript I 
+;===========================================
+ 
+*/
+
+thead {
+    background-color: #496CAD;
+    color: #ffffff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #699CFA;
+  }
