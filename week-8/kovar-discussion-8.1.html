@@ -1,0 +1,39 @@
+<!--
+============================================
+; Title: kovar-discussion-8.1
+; Author: Sarah Kovar
+; Date: 30 January 2020
+; Description: This is a simple HTML page 
+; with two jQuery errors.
+;===========================================
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8.1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod dapibus blandit. 
+      Quisque tempor porta ultrices. Nullam tincidunt fermentum nibh. Duis dapibus nibh rutrum 
+      urna pellentesque, eu dignissim felis porttitor. Pellentesque scelerisque felis eu lectus 
+      finibus, ac dapibus orci ultrices. Fusce ultrices erat eu dignissim ultrices. Nunc id eros 
+      felis. Integer eu semper sapien.</p>
+
+  <script>
+      $(function () {
+         $("<p>").mouseenter(function () {
+          $("p").css("background-color", "yellow")
+        });
+        $("p").mouseleave(function () {
+          $("p").css("background-color", white);
+        })
+      });
+  </script>
+
+</body>
+</html>
