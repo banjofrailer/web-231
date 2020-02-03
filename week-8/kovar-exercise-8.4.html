@@ -8,3 +8,87 @@
 ;===========================================
  
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="../site.css">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+<div id="emps"></div>
+
+<script type="text/javascript">
+
+  var employee = {
+    id: 111,
+    firstName: "",
+    lastName: "",
+    title: ""
+  };
+
+  var employees = [
+    new Employee (444, "Sally", "Council", "Designer"),
+    new Employee (846, "Sharon", "Silo", "Marketing Analyst"),
+    new Employee (123, "Ernest", "Hemingway", "Litigation Specialist"),
+    new Employee (108, "Meghan", "Mix", "Accountant"),
+    new Employee (989, "Chad", "Hall", "Web Developer")
+  ];
+
+  function Employee(id, firstName, lastName, title) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.title = title;
+  }
+
+  function getEmployee(id) {
+    employees.forEach(e => {
+      if (e.id === id) {
+        alert(`Id: ${e.id}
+First Name: ${e.firstName}
+Last Name: ${e.lastName}
+Title: ${e.title}`);
+      }
+      return;
+    });
+    return;
+  }
+
+  //setup table
+  var output = "<table id='employee'><thead><th>ID</th><th>First Name</th><th>Last Name</th><th>Title</th></thead><tbody>"
+
+  //iterate over array
+  employees.forEach(e => {
+    output += "<tr><td>" + e.id + "</td><td>" + e.firstName + "</td><td>" + e.lastName + "</td><td>" + e.title + "</td?</tr>"
+  });
+
+  //closing tags
+  output += "</tbody></table>"
+
+  //output
+  document.getElementById("emps").innerHTML = output;
+
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    $("table tr").click(function () {
+      var chID = $(this).find("td:first").html();
+      getEmployee(chID);
+    });
+  });
+</script>
+</body>
+</html>
