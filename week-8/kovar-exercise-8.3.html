@@ -1,0 +1,82 @@
+<!--
+============================================
+; Title: kovar-exercise-8.3
+; Author: Sarah Kovar
+; Date: 2 February 2020
+; Description: jQuery
+;===========================================
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8.3</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+</head>
+<body>
+
+  <nav></nav>
+
+  <div id="container">
+    <h2>Part A</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod dapibus blandit. Quisque tempor porta ultrices. 
+        Nullam tincidunt fermentum nibh. Duis dapibus nibh rutrum urna pellentesque, eu dignissim felis porttitor. Pellentesque 
+        scelerisque felis eu lectus finibus, ac dapibus orci ultrices. Fusce ultrices erat eu dignissim ultrices. Nunc id eros felis. 
+        Integer eu semper sapien.</p>
+
+    <button>Toggle</button>
+
+    <h2>Part B</h2>
+
+    <table>
+      <thead>
+        <td>Id</td>
+        <td>Type</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#" class="fruitId">1</a></td >
+          <td>Pear</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="fruitId">2</a></td>
+          <td>Kiwi</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="fruitId">3</a></td>
+          <td>Plum</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="fruitId">4</a></td>
+          <td>Raspberry</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="fruitId">5</a></td>
+          <td>Mango</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<script>
+    $(function () {
+        $("button").click(function () {
+            $("p").toggle()
+        });
+
+        $(".fruitId").click(function (event) {
+            event.preventDefault();
+            var fruitId = $(this).text();
+            var fruitType = $(this).closest("td").next().text();
+            alert("Fruit Id: "+ fruitId + ". Fruit Name: " + fruitType);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!--
+============================================
+; Title: kovar-exercise-8.2
+; Author: Sarah Kovar
+; Date: 2 February 2020
+; Description: Dynamic HTML
+;===========================================
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8.2</title>
+
+    <link rel="stylesheet" href="../site.css">
+
+</head>
+<body>
+
+<div id="fruits"></div>
+
+<script>
+    var fruits = [
+      { id: 1,
+      name: "Pear" },
+      { id: 2,
+      name: "Kiwi" },
+      { id: 3,
+      name: "Plum" },
+      { id: 4,
+      name: "Raspberry" },
+      { id: 5,
+      name: "Mango",}
+    ];
+
+    var out = "<h2>Fruits</h2><ul>";
+    for (var i = 0; i < fruits.length; i++) {
+        out += "<li>" + fruits[i].name + ": " + fruits[i].id + "</li>";
+    }
+    out += "</ul>";
+
+    document.getElementById('fruits').innerHTML = out;
+</script>
+
+</body>
+</html>
